@@ -9,13 +9,21 @@ const dataSchema = new mongoose.Schema({
     tipo:{type:Number, default:1}
 },{
     timestamps:true
-})
+});
 
 dataSchema.pre('save',function(next){
     if(!this.isModified("senha")){
         return next();
     }
     this.senha = bcrypt.hashSync(this.senha,10);
+    next();
+});
+
+dataSchema.pre('findOneAndUpdate',function(next){
+    var password = this.getUpdate().senha.toString();
+    if(password.length < 55){
+        this.getUpdate().senha = bcrypt.hashSync(password,10)
+    }
     next();
 });
 
