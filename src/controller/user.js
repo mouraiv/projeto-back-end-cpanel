@@ -1,3 +1,4 @@
+const { update } = require('../model/users');
 const users = require('../model/users');
 
 module.exports = {
@@ -6,11 +7,11 @@ module.exports = {
         res.json(user);
     },
     async create(req,res){
-        const { nome, sobrenome, email, senha, tipo} = req.body;
+        const {nome, sobrenome, email, senha, tipo} = req.body;
         let data = {};
         let user = await users.findOne({email});
         if(!user){
-            data = { nome, sobrenome, email, senha, tipo};
+            data = {nome, sobrenome, email, senha, tipo};
             user = await users.create(data);
             return res.status(200).json(user);
         }else{
@@ -26,5 +27,11 @@ module.exports = {
         const {_id} = req.params;
         const user = await users.findByIdAndDelete({_id})
         res.json(user); 
+    },
+    async update(req, res){
+        const {_id, nome, sobrenome, email, senha, tipo} = req.body;
+        const data = {nome, sobrenome, email, senha, tipo};
+        const user = await users.findByIdAndUpdate({_id}, data, {new:true});
+        res.json(user)
     }
 }
