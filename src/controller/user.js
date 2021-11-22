@@ -1,4 +1,3 @@
-const { update } = require('../model/users');
 const users = require('../model/users');
 
 module.exports = {
