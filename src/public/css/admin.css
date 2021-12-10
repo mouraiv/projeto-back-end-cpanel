@@ -4,7 +4,7 @@
 .navbar-principal{
     background-color: rgb(133, 133, 133);
     color: rgb(255, 255, 255);
-    height: 35px;
+    height: 40px;
     width: 100%;
     right: 0;
     border-color: wheat;
@@ -13,14 +13,14 @@
     position: absolute;
     padding: 0;
     border: 1;
-    height: 30px;
-    width: 30px;
+    height: 36px;
+    width: 45px;
     border-color: rgb(70, 70, 70);
     border-style:solid;
     border-radius: 5px;
     background: none;
     top: 2px;
-    right: 2%;
+    left: 1%;
 }
 .toggle-button:hover{
     border-color: rgb(117, 117, 117);
@@ -28,7 +28,7 @@
 .perfil-container{
     background-color: rgb(54, 54, 54);
     width: 180px;
-    height: 100px;
+    height: 130px;
     padding-top: 22px;
     padding-left: 8px;
     color: white;
@@ -77,7 +77,6 @@
 .menu-principal{
     background-color: rgb(77, 77, 77);
     height: 100%;
-    padding-top: 20px;
 }
 .menu-principal > .list-group-item{
     background-color: rgb(77, 77, 77);
@@ -85,7 +84,7 @@
     font-weight: bold;
     border-radius: 0px;
     border: none;
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100%;
     color: rgb(255, 255, 255);
 }
