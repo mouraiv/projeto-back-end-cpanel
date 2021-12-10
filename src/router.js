@@ -1,12 +1,16 @@
 const express = require('express');
+const path = require('path');
 const user = require('./controller/user');
+const home = require('./controller/home');
 const routes = express.Router();
 
-const users = require('./controller/user')
+//Rota Homes
+routes.get('/', home.index);
+routes.get('/admin', home.admin);
 
-//Rotas de usuários
+//Rotas API de usuários
 routes.post('/api/users.create',user.create);
-routes.get('/api/users.index',user.index);
+routes.get('/users',user.index);
 routes.get('/api/users.details/:_id',user.details);
 routes.delete('/api/users.delete/:_id',user.delete);
 routes.put('/api/users.update',user.update);

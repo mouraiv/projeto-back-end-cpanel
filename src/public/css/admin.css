@@ -1,0 +1,121 @@
+.admin{
+    height: 100%;
+}
+.navbar-principal{
+    background-color: rgb(133, 133, 133);
+    color: rgb(255, 255, 255);
+    height: 35px;
+    width: 100%;
+    right: 0;
+    border-color: wheat;
+}
+.toggle-button {
+    position: absolute;
+    padding: 0;
+    border: 1;
+    height: 30px;
+    width: 30px;
+    border-color: rgb(70, 70, 70);
+    border-style:solid;
+    border-radius: 5px;
+    background: none;
+    top: 2px;
+    right: 2%;
+}
+.toggle-button:hover{
+    border-color: rgb(117, 117, 117);
+}
+.perfil-container{
+    background-color: rgb(54, 54, 54);
+    width: 180px;
+    height: 100px;
+    padding-top: 22px;
+    padding-left: 8px;
+    color: white;
+}
+.perfil-container > img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+}
+.perfil-container-text{
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    left: 65px;
+    top:67px;
+    
+}
+.txt-bar-title-cpanel{
+    background-color: rgb(44, 44, 44);
+    font-weight: bold;
+    font-size: 18px;
+    height: 40px;
+    padding-top: 5px;
+}
+.txt-bar-title-cpanel > a{
+    color: white;
+}
+.txt-bar-title-cpanel > a > .fas{
+    padding-left: 22px;
+    padding-right: 10px;
+    color: white;
+}
+.txt-bar-title-cpanel > a:hover{
+    color: rgb(138, 138, 138);
+    text-decoration: none;
+}
+.txt-bar-title-cpanel > a:hover .fas{
+    color: rgb(138, 138, 138);
+}
+.list-group-conainer{
+    height: 100%;
+    width: 180px;
+}
+.menu-principal{
+    background-color: rgb(77, 77, 77);
+    height: 100%;
+    padding-top: 20px;
+}
+.menu-principal > .list-group-item{
+    background-color: rgb(77, 77, 77);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0px;
+    border: none;
+    padding-top: 20px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+.menu-principal > .list-group-item:hover{
+    text-decoration: none;
+}
+.menu-principal > .list-group-item .fas{
+    color: rgb(175, 175, 175);
+    font-size: 16px;
+    padding-right: 10px;
+}
+.menu-principal > .list-group-item .angle{
+    position: absolute;
+    right: 5%;
+}
+.menu-principal > .list-group-item:hover .fas{
+    color: rgb(255, 255, 255);
+}
+.menu-secundario > .list-group-item{
+    background-color: rgb(59, 59, 59);
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 43px;
+    border-width: 1px;
+    border-color: rgb(65, 65, 65);
+    border-radius: 0px;
+    width: 180px;
+    color: rgb(202, 202, 202);
+}
+.menu-secundario > .list-group-item:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

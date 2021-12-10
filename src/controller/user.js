@@ -1,9 +1,12 @@
 const users = require('../model/users');
 
 module.exports = {
-    async index(req,res){
-        const user = await users.find();
-        res.json(user);
+    index(req,res){
+        users.find().exec((err, user) => {
+            res.render('users',{
+                userList: user
+            });    
+        });
     },
     async create(req,res){
         const {nome, sobrenome, email, senha, tipo} = req.body;
