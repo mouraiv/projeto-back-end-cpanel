@@ -29,45 +29,45 @@
     background-color: rgb(54, 54, 54);
     width: 180px;
     height: 130px;
-    padding-top: 22px;
-    padding-left: 8px;
     color: white;
 }
 .perfil-container > img{
     width: 50px;
     height: 50px;
     border: none;
+    top: 70px;
+    left: 8px;
     border-radius: 25px;
+    position: absolute;
 }
 .perfil-container-text{
     font-size: 12px;
     position: absolute;
-    top: 0;
     font-weight: bold;
-    left: 65px;
-    top:67px;
+    left: 70px;
+    top:78px;
     
 }
-.txt-bar-title-cpanel{
+.txt-home-cpanel{
     background-color: rgb(44, 44, 44);
     font-weight: bold;
     font-size: 18px;
+    width: 180px;
     height: 40px;
     padding-top: 5px;
-}
-.txt-bar-title-cpanel > a{
     color: white;
 }
-.txt-bar-title-cpanel > a > .fas{
-    padding-left: 22px;
-    padding-right: 10px;
+
+.txt-home-cpanel > .fas{
+    padding-left: 17px;
+    padding-right: 8px;
     color: white;
 }
-.txt-bar-title-cpanel > a:hover{
+.txt-home-cpanel:hover{
     color: rgb(138, 138, 138);
     text-decoration: none;
 }
-.txt-bar-title-cpanel > a:hover .fas{
+.txt-home-cpanel:hover .fas{
     color: rgb(138, 138, 138);
 }
 .list-group-conainer{
