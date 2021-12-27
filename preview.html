@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>CPANEL</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,46 +14,73 @@
     <script>
        $(document).ready(function(){
             $('a').click(function() {
-            $(this).find('i').toggleClass('fa-angle-right fa-angle-down');
+                $(this).find('i').toggleClass('fa-angle-right fa-angle-down');
             });
+
        }); 
     </script>
 
     </head>
   <body>
 
-    <nav class="navbar-principal">
-        <button class="d-block d-lg-none toggle-button" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-      </nav>
+    <header>
 
-    <div class="list-group-conainer navbar-expand-lg">
-        <div class="perfil-container collapse navbar-collapse" id="navbarNav">     
-            <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-photo-183042379.jpg" alt="" />
-            <a class="perfil-container-text">Wesley Moura<br />Administrador</a> 
-        </div>
-    <div class="menu-principal list-group collapse navbar-collapse" id="navbarNav">
-        <a class="txt-home-cpanel" href="#"><i class="fas fa-home"></i>Dashboard</a>   
-        <a href="#" class="list-group-item" data-toggle="collapse" data-target="#user"><i class="fas fa-user"></i>Usuarios<i class="angle fas fa-angle-right"></i></a>
-            <div id="user" class="collapse menu-secundario">
-                <a href="#" class="list-group-item">Cadastro</a>
-                <a href="#" class="list-group-item">Lista</a>
+        <nav class="d-lg-none">
+            <span><i data-toggle="collapse" data-target="#menuCollapse" class="fas fa-bars"></i></span>
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="Minha Figura">
+            <a>Seu Nome</a>
+        </nav> 
+    
+    </header>
+
+    <section>
+
+    <div class="container-fluid px-0 my-0">
+
+            <div class="collapse d-lg-block" id="menuCollapse">
+                <div class="menu-column">
+                    <div class="title-menu d-none d-lg-block">
+                        <a>WM - CPANEL</a><br />
+                    </div>    
+               
+                    <div class="perfil d-none d-lg-block">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="Minha Figura">
+                        <a>Seu Nome</a>
+                    </div>
+
+                    <div class="menu-list-container">
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Cadastro</a></li>
+                            <li><a href="#">Slider</a></li>
+                            <li><a href="#">Publicidade</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">Widget</a></li>
+                        </ul>
+                    </div>
+          
+                        <div class="footer-menu d-none d-lg-block">
+                            <a>WM Developer - 2021</a><br />
+                            <a>mouraiv@gmail.com</a>
+                        </div>    
+                         
+                </div>
             </div>
-        <a href="#" class="list-group-item" data-toggle="collapse" data-target="#publicidade"><i class="fas fa-newspaper"></i>Publicidade<i class="angle fas fa-angle-right"></i></a>
-            <div id="publicidade" class="collapse menu-secundario">
-                <a href="#" class="list-group-item">Slide</a>
-                <a href="#" class="list-group-item">Poster</a>
+
+            <div class="container-frame">
+                <a>CONTEUDO</a>
             </div>
-        <a href="#" class="list-group-item" data-toggle="collapse" data-target="#blog"><i class="fas fa-blog"></i>Blog<i class="angle fas fa-angle-right"></i></a>
-            <div id="blog" class="collapse menu-secundario">
-                <a href="#" class="list-group-item">Poster</a>
-            </div>
-        <a href="#" class="list-group-item"><i class="fas fa-cubes"></i>Widget</a>     
-    </div>
+
+    <footer>
+        <div class="footer-menu d-lg-none">
+            <a>WM Developer - 2021</a><br />
+            <a>mouraiv@gmail.com</a>
+        </div>    
+    </footer>        
     </div>    
-    </div>
-      
+
+    </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

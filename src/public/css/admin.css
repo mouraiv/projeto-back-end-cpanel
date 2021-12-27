@@ -1,120 +1,126 @@
-.admin{
-    height: 100%;
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
 }
-.navbar-principal{
-    background-color: rgb(133, 133, 133);
-    color: rgb(255, 255, 255);
-    height: 40px;
-    width: 100%;
-    right: 0;
-    border-color: wheat;
+.title-menu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: rgb(141, 141, 141);
 }
-.toggle-button {
-    position: absolute;
-    padding: 0;
-    border: 1;
-    height: 36px;
-    width: 45px;
-    border-color: rgb(70, 70, 70);
-    border-style:solid;
-    border-radius: 5px;
-    background: none;
-    top: 2px;
-    left: 1%;
-}
-.toggle-button:hover{
-    border-color: rgb(117, 117, 117);
-}
-.perfil-container{
-    background-color: rgb(54, 54, 54);
-    width: 180px;
-    height: 130px;
+nav {
+    background-color: rgb(17, 17, 17);
     color: white;
-}
-.perfil-container > img{
-    width: 50px;
     height: 50px;
-    border: none;
-    top: 70px;
-    left: 8px;
-    border-radius: 25px;
-    position: absolute;
 }
-.perfil-container-text{
-    font-size: 12px;
-    position: absolute;
+nav span i{
+    text-align: center;
+    margin-top: 4px;
+    margin-left: 5px;
+    width: 50px;
+    font-size: 1.5rem;
+    padding: 8px;
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+}
+nav img{
+    width: 40px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+nav a {
+    margin-left: 5px;
+    font-size: 1.0rem;
+    font-style: italic;
+}
+ul{
+    padding: 0;
+    padding-top: 20px;
+}
+ul li{
+    padding-bottom: 10px;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+ul li a{
+    color: white;
+    padding-left: 40px;
+    font-size: 0.9rem;
     font-weight: bold;
-    left: 70px;
-    top:78px;
+}
+ul li a:hover{
+    color: white;
+    text-decoration: none;
+    border-left: 3px;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
     
 }
-.txt-home-cpanel{
-    background-color: rgb(44, 44, 44);
+.perfil img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    border-radius: 50%;
+    padding: 10px;
+    width: 110px;
+}
+.perfil{
+    margin-top: 10px;
+    text-align: center;
     font-weight: bold;
-    font-size: 18px;
-    width: 180px;
-    height: 40px;
-    padding-top: 5px;
+    font-style: italic;
+    font-size: 0.9rem;;
+}
+.menu-column{
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(58, 58, 58);
     color: white;
+    
 }
-
-.txt-home-cpanel > .fas{
-    padding-left: 17px;
-    padding-right: 8px;
-    color: white;
+.menu-list-container{
+    flex-grow: 1;    
 }
-.txt-home-cpanel:hover{
-    color: rgb(138, 138, 138);
-    text-decoration: none;
+.container-frame{  
+    background-color: rgb(177, 177, 177);
+    min-height: calc(100vh - 129px);
+    
 }
-.txt-home-cpanel:hover .fas{
-    color: rgb(138, 138, 138);
-}
-.list-group-conainer{
-    height: 100%;
-    width: 180px;
-}
-.menu-principal{
-    background-color: rgb(77, 77, 77);
-    height: 100%;
-}
-.menu-principal > .list-group-item{
-    background-color: rgb(77, 77, 77);
-    font-size: 14px;
+.footer-menu{
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.8rem;
     font-weight: bold;
-    border-radius: 0px;
-    border: none;
-    padding-top: 10px;
-    width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(141, 141, 141);
 }
-.menu-principal > .list-group-item:hover{
-    text-decoration: none;
-}
-.menu-principal > .list-group-item .fas{
-    color: rgb(175, 175, 175);
-    font-size: 16px;
-    padding-right: 10px;
-}
-.menu-principal > .list-group-item .angle{
-    position: absolute;
-    right: 5%;
-}
-.menu-principal > .list-group-item:hover .fas{
-    color: rgb(255, 255, 255);
-}
-.menu-secundario > .list-group-item{
-    background-color: rgb(59, 59, 59);
-    font-size: 14px;
-    font-weight: bold;
-    padding-left: 43px;
-    border-width: 1px;
-    border-color: rgb(65, 65, 65);
-    border-radius: 0px;
-    width: 180px;
-    color: rgb(202, 202, 202);
-}
-.menu-secundario > .list-group-item:hover{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+@media screen and (min-width: 992px) {
+    .menu-column{
+        flex-direction:column;
+        min-width: 200px;
+        min-height: 100vh;
+      
+    }
+    .container-frame{
+        width: calc(100% - 200px);
+        min-height: 100vh;
+    }
+    ul{
+        padding-top: 50px;
+    }
+    .container-fluid{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
 }
